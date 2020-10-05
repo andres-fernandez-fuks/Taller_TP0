@@ -122,6 +122,17 @@ En orden:
 * conflicting types: no entiendo del todo este error, porque el método está definido con la misma firma en el .h y en el .c, lo que sería correcto. Como se devuelve un size_t, que no es reconocido como tipo de dato, asumo que el error proviene de ahí.
 * implicit declaration of function malloc: sucede algo similar a lo que pasa con size_t y FILE. En este caso, malloc es una función definida en stdlib.h, por lo que es necesario incluir esa librería para poder usar la función.
 
+Al igual que en el paso anterior, todos son errores de compilación.
+
 ### Paso 3
 
+**a)**
+
+Básicamente, se incluyen las librerías que faltaban en la versión anterior.
+
+**b)**
+
+![Captura](Paso3_erroresDeGeneracion.png)
+
+El único error de compilación, undefined reference, se da porque la función wordscounter_destroy, si bien está declarada en el .h, no está definida en el .c. El error es de compilación.
 
