@@ -113,11 +113,15 @@ En el wordcounter.h del paso 2:
 
 **c)**
 
+![Captura](Paso2_erroresDeGeneracion.png)
+
 En orden:
 
 * unknown type size_t: en el standard C99, no estaba incluido size_t como tipo de dato primitivo. Es necesario incluir stddef.h en el código (lo dice el mismo compilador).
 * unknown type FILE: análogo al error de arriba. En este caso, habría que incluir stdio.h.
 * conflicting types: no entiendo del todo este error, porque el método está definido con la misma firma en el .h y en el .c, lo que sería correcto. Como se devuelve un size_t, que no es reconocido como tipo de dato, asumo que el error proviene de ahí.
 * implicit declaration of function malloc: sucede algo similar a lo que pasa con size_t y FILE. En este caso, malloc es una función definida en stdlib.h, por lo que es necesario incluir esa librería para poder usar la función.
+
+### Paso 3
 
 
