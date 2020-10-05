@@ -1,10 +1,10 @@
 ## **Informe TP 0**
 
-### Parte 0
+### Paso 0
 
 **a)**
 
-![Captura](Parte0_PuntoA.png)
+![Captura](Paso0_PuntoA.png)
 
 **b)**
 
@@ -54,11 +54,11 @@ En la Temrinal, esto se puede hacer de la siguiente manera:
 
 datos_iniciales | filtro | imprimir_datos_filtrados -> en este ejemplo, se cuenta con una función que devuelve un string de datos de algún tipo. Esos datos pasan por un filtro, es decir, lo que devuelva datos_iniciales se usará como input de filtro, y los datos que salgan de ese filtro se utilizarán como input en la función imprimir_datos_filtrados. Es la idea resumida de los pipes.
 
-### Parte 1
+### Paso 1
 
 **a)**
 
-![Captura](Parte_1_erroresDeEstilo.png)
+![Captura](Paso1_erroresDeEstilo.png)
 
 En orden:
 
@@ -76,16 +76,48 @@ En orden:
 
 **b)**
 
-![Captura](Parte_1_erroresDeGeneracion.png)
+![Captura](Paso1_erroresDeGeneracion.png)
 
 En orden:
 
 * unknown type name: no reconoce el tipo de la variable declarada;
 * implicit declaration of function: se está utilizando una función cuya firma no se conoce, porque no se declaró (en el entorno correcto). Aplica para todas las instancias de este error.
 
-Son todos errores de linkedición. Tanto la estructura de datos wordscounter_t como las funciones se encuentran declaradas en el archivo paso1_wordscounter.h y definidas en el archivo paso1_wordscounter.c (aunque la función destroy no está definida, en realidad). Pero el problema principal es que, al no incluirse en main el archivo .h, a través de la línea #include "paso1_wordscounter.h", el compilador no tiene forma de saber que ese tipo de datos y esas funciones están definidas a la hora de compilar el programa.
+Son todos errores de compilación. Tanto la estructura de datos wordscounter_t como las funciones se encuentran declaradas en el archivo paso1_wordscounter.h y definidas en el archivo paso1_wordscounter.c (aunque la función destroy no está definida, en realidad). Pero el problema principal es que, al no incluirse en main el archivo .h, a través de la línea #include "paso1_wordscounter.h", el compilador no tiene forma de saber que ese tipo de datos y esas funciones están definidas en otro archivo.
 
 **c)**
 
 El sistema no reporta warnings porque, en el Makefile, se utilizó la opción -Werror para compilar, lo que convierte a todas las advertencias o warnings en errores.
+
+### Paso 2
+
+**a)**
+
+En el main del paso 2:
+
+* Se hace el include del wordcounter.h, lo que debería resolver los problemas de compilación relacionados a la falta de este include.
+* Se reemplaza strcpy por memcpy.
+* Se corrigen errores de estilo.
+
+En el wordcounter.c del paso 2:
+
+* Se corrigen errores de estilo.
+
+En el wordcounter.h del paso 2:
+
+* Se achica la línea que superaba los 80 caracteres.
+
+**b)**
+
+![Captura](Paso2_OkEstilo.png)
+
+**c)**
+
+En orden:
+
+* unknown type size_t: en el standard C99, no estaba incluido size_t como tipo de dato primitivo. Es necesario incluir stddef.h en el código (lo dice el mismo compilador).
+* unknown type FILE: análogo al error de arriba. En este caso, habría que incluir stdio.h.
+* conflicting types: no entiendo del todo este error, porque el método está definido con la misma firma en el .h y en el .c, lo que sería correcto. Como se devuelve un size_t, que no es reconocido como tipo de dato, asumo que el error proviene de ahí.
+* implicit declaration of function malloc: sucede algo similar a lo que pasa con size_t y FILE. En este caso, malloc es una función definida en stdlib.h, por lo que es necesario incluir esa librería para poder usar la función.
+
 
