@@ -136,3 +136,37 @@ Básicamente, se incluyen las librerías que faltaban en la versión anterior.
 
 El único error de compilación, undefined reference, se da porque la función wordscounter_destroy, si bien está declarada en el .h, no está definida en el .c. El error es de compilación.
 
+### Paso 4
+
+**a)**
+
+La diferencia principalmente es que se incluyó en wordscounter.c la definición de la función destroy, aunque se dejó su funcionamiento vacío.
+
+**b)**
+
+![Captura](Paso4_TDA_1.png)
+
+![Captura](Paso4_TDA_2.png)
+
+Según Valgrind, se allocaron 218 bloques de memoria dinámica. Sólo se realizaron 2 frees.
+
+De los 216 bloques no liberados, 1 de esos bloques estaba siendo correctamente rastreado por el programa (se tenía su dirección de memoria), por lo que se lo categoriza como "still reachable". Este bloque tenía un tamaño de 472 bytes.
+
+Los otros 215 bloques se categorizan como "definitely lost", porque el programa en algún momento perdió el acceso a su dirección de memoria. El tamaño total de los 215 bloques era de 1505 bytes.
+
+**c)**
+
+![Captura](Paso4_LongFileName.png)
+
+En este caso, no hay errores de pérdida de memoria del heap. Lo que sí sucede es que, durante el uso de memcpy en main.c, se excede la capacidad del buffer, que vive en el stack, utilizado en la función. Es decir, la cantidad de bytes que se intentaron copiar al buffer de la función excedieron su longitud, que era de 30 bytes.
+
+**d)**
+
+En este caso, utilizar strncpy no hubiera servido de nada. La diferencia principal entre ambas funciones es que memcpy copiará la cantidad de bytes determinada por el tercer argumento que se le pasa (en este caso, 34 bytes). Por su parte, strncpy copiará como máximo la cantidad de bytes indicada por parámetro, pero si antes de esa determinada posición encuentra un "\0", copiará hasta la posición del "\0". Por lo tanto, en este caso, strncpy también se hubiera excedido de la capacidad del buffer, porque el "\0" se encontraba en la posición 34 de la cadena.
+
+**e)**
+
+Buffer overflow: como se explicó arriba se da cuando, dado un determinado buffer o arreglo en memoria estática, se intenta ingresar copiar al buffer información que termina excediendo el tamaño del buffer, y termina sobreescribiendo o intentando sobreescribir posiciones de memoria que están por fuera del buffer.
+
+Segmentation fault: es un error relacionado a la protección de memoria de la computadora. Todos los procesos en ejecución tienen un espacio de direcciones, fuera del cual no pueden acceder. Cuando un proceso intenta acceder a una posición de memoria que cae fuera de su espacio de direcciones, se levanta un segmentation fault. Esa dirección de memoria no pertenece a ese proceso, y por lo tanto no tiene acceso a la misma.
+
