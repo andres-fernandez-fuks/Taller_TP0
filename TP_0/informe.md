@@ -170,3 +170,46 @@ Buffer overflow: como se explicó arriba se da cuando, dado un determinado buffe
 
 Segmentation fault: es un error relacionado a la protección de memoria de la computadora. Todos los procesos en ejecución tienen un espacio de direcciones, fuera del cual no pueden acceder. Cuando un proceso intenta acceder a una posición de memoria que cae fuera de su espacio de direcciones, se levanta un segmentation fault. Esa dirección de memoria no pertenece a ese proceso, y por lo tanto no tiene acceso a la misma.
 
+### Paso 5
+
+**a)**
+
+* Se utilizó directamente el elemento 1 de argv como argumento de la función fopen, en lugar de copiar su contenido a un buffer. Se agregó también una condición que verificara si el input venía de un archivo o no. En caso de venir de un archivo, se cierra el archivo al finalizar.
+
+* Se cambió la forma de definir los posibles caracteres delimitadores. Antes se los agregaba uno por uno a un arreglo, ahora se generó un string a partir de un puntero a char, en el que se incluyeron todos los posibles delimitadores.
+
+**b)**
+
+![Captura](Paso5_parteB.png)
+
+Las funciones fallan porque el output que devuelven no es el esperado, o sea, el resultado de la función no es el que debería ser. En invalid_file se espera como resultado un 255 y se devuelve un 1, y en single_name se espera un 0 y se devuelve también un 1.
+
+**c)**
+
+![Captura](Paso5_parteC.png)
+
+Es bastante difícil leer el resultado de hexdump, pero el último caracter de acuerdo a lo obtenido es una "d". Además, el EOF no se indica a través de un caracter, así que no tendría sentido que fuera otro el último caracter.
+
+**d)**
+
+![Captura](Paso5_parteD_1.png)
+
+**info funcions**: muestra la lista de funciones del programa que se está debuggeando.
+
+![Captura](Paso5_parteD_2.png)
+
+**list [función]**: imprime 10 líneas del programa centradas alrededor del inicio de la función.
+
+![Captura](Paso5_parteD_3.png)
+
+**list**: imprime las 10 próximas líneas del programa a partir de la cual se está ejecutando.
+
+![Captura](Paso5_parteD_4.png)
+
+**break [num de línea]**: pone un breakpoint en la línea indicada.
+
+**run [argumento]**: ejecuta el programa con el argumento especificado.
+
+El debugger se saltea el breakpoint de la línea 45 porque el programa no entra al if en el que está contenida la línea.
+
+
