@@ -4,7 +4,7 @@
 
 **a)**
 
-![Captura](Paso0_PuntoA.png)
+![Captura](capturas/Paso0_PuntoA.png)
 
 **b)**
 
@@ -58,7 +58,7 @@ datos_iniciales | filtro | imprimir_datos_filtrados -> en este ejemplo, se cuent
 
 **a)**
 
-![Captura](Paso1_erroresDeEstilo.png)
+![Captura](capturas/Paso1_erroresDeEstilo.png)
 
 En orden:
 
@@ -76,7 +76,7 @@ En orden:
 
 **b)**
 
-![Captura](Paso1_erroresDeGeneracion.png)
+![Captura](capturas/Paso1_erroresDeGeneracion.png)
 
 En orden:
 
@@ -109,11 +109,11 @@ En el wordcounter.h del paso 2:
 
 **b)**
 
-![Captura](Paso2_OkEstilo.png)
+![Captura](capturas/Paso2_OkEstilo.png)
 
 **c)**
 
-![Captura](Paso2_erroresDeGeneracion.png)
+![Captura](capturas/Paso2_erroresDeGeneracion.png)
 
 En orden:
 
@@ -132,7 +132,7 @@ Básicamente, se incluyen las librerías que faltaban en la versión anterior.
 
 **b)**
 
-![Captura](Paso3_erroresDeGeneracion.png)
+![Captura](capturas/Paso3_erroresDeGeneracion.png)
 
 El único error de compilación, undefined reference, se da porque la función wordscounter_destroy, si bien está declarada en el .h, no está definida en el .c. El error es de compilación.
 
@@ -144,9 +144,9 @@ La diferencia principalmente es que se incluyó en wordscounter.c la definición
 
 **b)**
 
-![Captura](Paso4_TDA_1.png)
+![Captura](capturas/Paso4_TDA_1.png)
 
-![Captura](Paso4_TDA_2.png)
+![Captura](capturas/Paso4_TDA_2.png)
 
 Según Valgrind, se allocaron 218 bloques de memoria dinámica. Sólo se realizaron 2 frees.
 
@@ -156,7 +156,7 @@ Los otros 215 bloques se categorizan como "definitely lost", porque el programa 
 
 **c)**
 
-![Captura](Paso4_LongFileName.png)
+![Captura](capturas/Paso4_LongFileName.png)
 
 En este caso, no hay errores de pérdida de memoria del heap. Lo que sí sucede es que, durante el uso de memcpy en main.c, se excede la capacidad del buffer, que vive en el stack, utilizado en la función. Es decir, la cantidad de bytes que se intentaron copiar al buffer de la función excedieron su longitud, que era de 30 bytes.
 
@@ -180,36 +180,56 @@ Segmentation fault: es un error relacionado a la protección de memoria de la co
 
 **b)**
 
-![Captura](Paso5_parteB.png)
+![Captura](capturas/Paso5_parteB.png)
 
 Las funciones fallan porque el output que devuelven no es el esperado, o sea, el resultado de la función no es el que debería ser. En invalid_file se espera como resultado un 255 y se devuelve un 1, y en single_name se espera un 0 y se devuelve también un 1.
 
 **c)**
 
-![Captura](Paso5_parteC.png)
+![Captura](capturas/Paso5_parteC.png)
 
 Es bastante difícil leer el resultado de hexdump, pero el último caracter de acuerdo a lo obtenido es una "d". Además, el EOF no se indica a través de un caracter, así que no tendría sentido que fuera otro el último caracter.
 
 **d)**
 
-![Captura](Paso5_parteD_1.png)
+![Captura](capturas/Paso5_parteD_1.png)
 
-**info funcions**: muestra la lista de funciones del programa que se está debuggeando.
+**info functions**: muestra la lista de funciones del programa que se está debuggeando.
 
-![Captura](Paso5_parteD_2.png)
+![Captura](capturas/Paso5_parteD_2.png)
 
 **list [función]**: imprime 10 líneas del programa centradas alrededor del inicio de la función.
 
-![Captura](Paso5_parteD_3.png)
+![Captura](capturas/Paso5_parteD_3.png)
 
 **list**: imprime las 10 próximas líneas del programa a partir de la cual se está ejecutando.
 
-![Captura](Paso5_parteD_4.png)
+![Captura](capturas/Paso5_parteD_4.png)
 
 **break [num de línea]**: pone un breakpoint en la línea indicada.
 
 **run [argumento]**: ejecuta el programa con el argumento especificado.
 
 El debugger se saltea el breakpoint de la línea 45 porque el programa no entra al if en el que está contenida la línea.
+
+### Paso 6
+
+**a)**
+
+* Se cambia el valor de la macro ERROR de -1 a 1.
+
+* Se usa una macro para definir al string de caracteres delimitadores en lugar de una variable en el stack. Las macros viven en el Data Segment.
+
+* Se cambia el orden de algunos ifs del código.
+
+* Se agrega el chequeo de una condición, a través de EOF.
+
+**c)**
+
+![Captura](capturas/Paso6_parteC_1.png)
+
+Con la última opción, se crea un archivo llamado output_singe_word.txt, que contiene un 1.
+
+![Captura](capturas/Paso6_parteC_2.png)
 
 
