@@ -182,7 +182,7 @@ Segmentation fault: es un error relacionado a la protección de memoria de la co
 
 ![Captura](capturas/Paso5_parteB.png)
 
-Las funciones fallan porque el output que devuelven no es el esperado, o sea, el resultado de la función no es el que debería ser. En invalid_file se espera como resultado un 1 y se devuelve un 255, y en single_name se espera también un 1 y se devuelve un 0.
+Las funciones fallan porque el output que devuelven no es el esperado, o sea, el resultado de la función no es el que debería ser. En invalid_file se espera como resultado un 255 y se devuelve un 1, y en single_name se espera un 0 y se devuelve también un 1.
 
 **c)**
 
