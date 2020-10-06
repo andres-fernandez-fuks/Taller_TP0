@@ -224,6 +224,12 @@ El debugger se saltea el breakpoint de la línea 45 porque el programa no entra 
 
 * Se agrega el chequeo de una condición, a través de EOF.
 
+**b)**
+
+![Captura](capturas/Paso6_parteB_1.png)
+
+![Captura](capturas/Paso6_parteB_2.png)
+
 **c)**
 
 ![Captura](capturas/Paso6_parteC_1.png)
