@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.h
+
+/home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.h
+
+/home/andres/CLionProjects/Taller/TP_1/main.c
+stdio.h
+-
+string.h
+-
+limits.h
+-
+stdlib.h
+-
+decodificacion_cesar.h
+/home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.h
+decodificacion_rc4.h
+/home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.h
+
