@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TP_1.dir/decodificacion_cesar.c.o"
-  "CMakeFiles/TP_1.dir/decodificacion_rc4.c.o"
+  "CMakeFiles/TP_1.dir/aux_cipher.c.o"
+  "CMakeFiles/TP_1.dir/cipher.c.o"
+  "CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o"
+  "CMakeFiles/TP_1.dir/decodificacion.c.o"
   "CMakeFiles/TP_1.dir/main.c.o"
+  "CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o"
   "TP_1"
   "TP_1.pdb"
 )

@@ -78,19 +78,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.c">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/aux_cipher.c">
 			<Option target="TP_1"/>
 		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.h">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/aux_cipher.h">
 			<Option target="TP_1"/>
 		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.c">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/cipher.c">
 			<Option target="TP_1"/>
 		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.h">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/cipher.h">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.h">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion.h">
 			<Option target="TP_1"/>
 		</Unit>
 		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/main.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/server_bindearAlSocket.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/server_bindearAlSocket.h">
 			<Option target="TP_1"/>
 		</Unit>
 		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/CMakeLists.txt">

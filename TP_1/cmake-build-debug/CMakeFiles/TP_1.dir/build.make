@@ -77,9 +77,48 @@ include CMakeFiles/TP_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TP_1.dir/flags.make
 
+CMakeFiles/TP_1.dir/aux_cipher.c.o: CMakeFiles/TP_1.dir/flags.make
+CMakeFiles/TP_1.dir/aux_cipher.c.o: ../aux_cipher.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TP_1.dir/aux_cipher.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/aux_cipher.c.o   -c /home/andres/CLionProjects/Taller/TP_1/aux_cipher.c
+
+CMakeFiles/TP_1.dir/aux_cipher.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP_1.dir/aux_cipher.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andres/CLionProjects/Taller/TP_1/aux_cipher.c > CMakeFiles/TP_1.dir/aux_cipher.c.i
+
+CMakeFiles/TP_1.dir/aux_cipher.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/aux_cipher.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/aux_cipher.c -o CMakeFiles/TP_1.dir/aux_cipher.c.s
+
+CMakeFiles/TP_1.dir/decodificacion.c.o: CMakeFiles/TP_1.dir/flags.make
+CMakeFiles/TP_1.dir/decodificacion.c.o: ../decodificacion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TP_1.dir/decodificacion.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/decodificacion.c.o   -c /home/andres/CLionProjects/Taller/TP_1/decodificacion.c
+
+CMakeFiles/TP_1.dir/decodificacion.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP_1.dir/decodificacion.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andres/CLionProjects/Taller/TP_1/decodificacion.c > CMakeFiles/TP_1.dir/decodificacion.c.i
+
+CMakeFiles/TP_1.dir/decodificacion.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/decodificacion.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/decodificacion.c -o CMakeFiles/TP_1.dir/decodificacion.c.s
+
+CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o: CMakeFiles/TP_1.dir/flags.make
+CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o: ../client_conectarAlSocket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o   -c /home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.c
+
+CMakeFiles/TP_1.dir/client_conectarAlSocket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP_1.dir/client_conectarAlSocket.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.c > CMakeFiles/TP_1.dir/client_conectarAlSocket.c.i
+
+CMakeFiles/TP_1.dir/client_conectarAlSocket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/client_conectarAlSocket.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.c -o CMakeFiles/TP_1.dir/client_conectarAlSocket.c.s
+
 CMakeFiles/TP_1.dir/main.c.o: CMakeFiles/TP_1.dir/flags.make
 CMakeFiles/TP_1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TP_1.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TP_1.dir/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/main.c.o   -c /home/andres/CLionProjects/Taller/TP_1/main.c
 
 CMakeFiles/TP_1.dir/main.c.i: cmake_force
@@ -90,47 +129,53 @@ CMakeFiles/TP_1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/main.c -o CMakeFiles/TP_1.dir/main.c.s
 
-CMakeFiles/TP_1.dir/decodificacion_cesar.c.o: CMakeFiles/TP_1.dir/flags.make
-CMakeFiles/TP_1.dir/decodificacion_cesar.c.o: ../decodificacion_cesar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TP_1.dir/decodificacion_cesar.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/decodificacion_cesar.c.o   -c /home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.c
+CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o: CMakeFiles/TP_1.dir/flags.make
+CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o: ../server_bindearAlSocket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o   -c /home/andres/CLionProjects/Taller/TP_1/server_bindearAlSocket.c
 
-CMakeFiles/TP_1.dir/decodificacion_cesar.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP_1.dir/decodificacion_cesar.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.c > CMakeFiles/TP_1.dir/decodificacion_cesar.c.i
+CMakeFiles/TP_1.dir/server_bindearAlSocket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP_1.dir/server_bindearAlSocket.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andres/CLionProjects/Taller/TP_1/server_bindearAlSocket.c > CMakeFiles/TP_1.dir/server_bindearAlSocket.c.i
 
-CMakeFiles/TP_1.dir/decodificacion_cesar.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/decodificacion_cesar.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.c -o CMakeFiles/TP_1.dir/decodificacion_cesar.c.s
+CMakeFiles/TP_1.dir/server_bindearAlSocket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/server_bindearAlSocket.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/server_bindearAlSocket.c -o CMakeFiles/TP_1.dir/server_bindearAlSocket.c.s
 
-CMakeFiles/TP_1.dir/decodificacion_rc4.c.o: CMakeFiles/TP_1.dir/flags.make
-CMakeFiles/TP_1.dir/decodificacion_rc4.c.o: ../decodificacion_rc4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TP_1.dir/decodificacion_rc4.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/decodificacion_rc4.c.o   -c /home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.c
+CMakeFiles/TP_1.dir/cipher.c.o: CMakeFiles/TP_1.dir/flags.make
+CMakeFiles/TP_1.dir/cipher.c.o: ../cipher.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/TP_1.dir/cipher.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP_1.dir/cipher.c.o   -c /home/andres/CLionProjects/Taller/TP_1/cipher.c
 
-CMakeFiles/TP_1.dir/decodificacion_rc4.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP_1.dir/decodificacion_rc4.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.c > CMakeFiles/TP_1.dir/decodificacion_rc4.c.i
+CMakeFiles/TP_1.dir/cipher.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP_1.dir/cipher.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/andres/CLionProjects/Taller/TP_1/cipher.c > CMakeFiles/TP_1.dir/cipher.c.i
 
-CMakeFiles/TP_1.dir/decodificacion_rc4.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/decodificacion_rc4.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.c -o CMakeFiles/TP_1.dir/decodificacion_rc4.c.s
+CMakeFiles/TP_1.dir/cipher.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP_1.dir/cipher.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/andres/CLionProjects/Taller/TP_1/cipher.c -o CMakeFiles/TP_1.dir/cipher.c.s
 
 # Object files for target TP_1
 TP_1_OBJECTS = \
+"CMakeFiles/TP_1.dir/aux_cipher.c.o" \
+"CMakeFiles/TP_1.dir/decodificacion.c.o" \
+"CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o" \
 "CMakeFiles/TP_1.dir/main.c.o" \
-"CMakeFiles/TP_1.dir/decodificacion_cesar.c.o" \
-"CMakeFiles/TP_1.dir/decodificacion_rc4.c.o"
+"CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o" \
+"CMakeFiles/TP_1.dir/cipher.c.o"
 
 # External object files for target TP_1
 TP_1_EXTERNAL_OBJECTS =
 
+TP_1: CMakeFiles/TP_1.dir/aux_cipher.c.o
+TP_1: CMakeFiles/TP_1.dir/decodificacion.c.o
+TP_1: CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o
 TP_1: CMakeFiles/TP_1.dir/main.c.o
-TP_1: CMakeFiles/TP_1.dir/decodificacion_cesar.c.o
-TP_1: CMakeFiles/TP_1.dir/decodificacion_rc4.c.o
+TP_1: CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o
+TP_1: CMakeFiles/TP_1.dir/cipher.c.o
 TP_1: CMakeFiles/TP_1.dir/build.make
 TP_1: CMakeFiles/TP_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable TP_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andres/CLionProjects/Taller/TP_1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable TP_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

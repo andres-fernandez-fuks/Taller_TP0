@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.h
-
-/home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.h
-
-/home/andres/CLionProjects/Taller/TP_1/main.c
-stdio.h
+/home/andres/CLionProjects/Taller/TP_1/decodificacion.c
+stddef.h
 -
 string.h
 -
-limits.h
+stdio.h
 -
 stdlib.h
 -
-decodificacion_cesar.h
-/home/andres/CLionProjects/Taller/TP_1/decodificacion_cesar.h
-decodificacion_rc4.h
-/home/andres/CLionProjects/Taller/TP_1/decodificacion_rc4.h
+decodificacion.h
+/home/andres/CLionProjects/Taller/TP_1/decodificacion.h
+
+/home/andres/CLionProjects/Taller/TP_1/decodificacion.h
 

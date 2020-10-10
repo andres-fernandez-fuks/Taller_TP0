@@ -143,59 +143,113 @@ TP_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/build
 .PHONY : TP_1/fast
 
-decodificacion_cesar.o: decodificacion_cesar.c.o
+aux_cipher.o: aux_cipher.c.o
 
-.PHONY : decodificacion_cesar.o
-
-# target to build an object file
-decodificacion_cesar.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion_cesar.c.o
-.PHONY : decodificacion_cesar.c.o
-
-decodificacion_cesar.i: decodificacion_cesar.c.i
-
-.PHONY : decodificacion_cesar.i
-
-# target to preprocess a source file
-decodificacion_cesar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion_cesar.c.i
-.PHONY : decodificacion_cesar.c.i
-
-decodificacion_cesar.s: decodificacion_cesar.c.s
-
-.PHONY : decodificacion_cesar.s
-
-# target to generate assembly for a file
-decodificacion_cesar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion_cesar.c.s
-.PHONY : decodificacion_cesar.c.s
-
-decodificacion_rc4.o: decodificacion_rc4.c.o
-
-.PHONY : decodificacion_rc4.o
+.PHONY : aux_cipher.o
 
 # target to build an object file
-decodificacion_rc4.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion_rc4.c.o
-.PHONY : decodificacion_rc4.c.o
+aux_cipher.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/aux_cipher.c.o
+.PHONY : aux_cipher.c.o
 
-decodificacion_rc4.i: decodificacion_rc4.c.i
+aux_cipher.i: aux_cipher.c.i
 
-.PHONY : decodificacion_rc4.i
+.PHONY : aux_cipher.i
 
 # target to preprocess a source file
-decodificacion_rc4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion_rc4.c.i
-.PHONY : decodificacion_rc4.c.i
+aux_cipher.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/aux_cipher.c.i
+.PHONY : aux_cipher.c.i
 
-decodificacion_rc4.s: decodificacion_rc4.c.s
+aux_cipher.s: aux_cipher.c.s
 
-.PHONY : decodificacion_rc4.s
+.PHONY : aux_cipher.s
 
 # target to generate assembly for a file
-decodificacion_rc4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion_rc4.c.s
-.PHONY : decodificacion_rc4.c.s
+aux_cipher.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/aux_cipher.c.s
+.PHONY : aux_cipher.c.s
+
+cipher.o: cipher.c.o
+
+.PHONY : cipher.o
+
+# target to build an object file
+cipher.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/cipher.c.o
+.PHONY : cipher.c.o
+
+cipher.i: cipher.c.i
+
+.PHONY : cipher.i
+
+# target to preprocess a source file
+cipher.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/cipher.c.i
+.PHONY : cipher.c.i
+
+cipher.s: cipher.c.s
+
+.PHONY : cipher.s
+
+# target to generate assembly for a file
+cipher.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/cipher.c.s
+.PHONY : cipher.c.s
+
+client_conectarAlSocket.o: client_conectarAlSocket.c.o
+
+.PHONY : client_conectarAlSocket.o
+
+# target to build an object file
+client_conectarAlSocket.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_conectarAlSocket.c.o
+.PHONY : client_conectarAlSocket.c.o
+
+client_conectarAlSocket.i: client_conectarAlSocket.c.i
+
+.PHONY : client_conectarAlSocket.i
+
+# target to preprocess a source file
+client_conectarAlSocket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_conectarAlSocket.c.i
+.PHONY : client_conectarAlSocket.c.i
+
+client_conectarAlSocket.s: client_conectarAlSocket.c.s
+
+.PHONY : client_conectarAlSocket.s
+
+# target to generate assembly for a file
+client_conectarAlSocket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_conectarAlSocket.c.s
+.PHONY : client_conectarAlSocket.c.s
+
+decodificacion.o: decodificacion.c.o
+
+.PHONY : decodificacion.o
+
+# target to build an object file
+decodificacion.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion.c.o
+.PHONY : decodificacion.c.o
+
+decodificacion.i: decodificacion.c.i
+
+.PHONY : decodificacion.i
+
+# target to preprocess a source file
+decodificacion.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion.c.i
+.PHONY : decodificacion.c.i
+
+decodificacion.s: decodificacion.c.s
+
+.PHONY : decodificacion.s
+
+# target to generate assembly for a file
+decodificacion.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion.c.s
+.PHONY : decodificacion.c.s
 
 main.o: main.c.o
 
@@ -224,6 +278,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/main.c.s
 .PHONY : main.c.s
 
+server_bindearAlSocket.o: server_bindearAlSocket.c.o
+
+.PHONY : server_bindearAlSocket.o
+
+# target to build an object file
+server_bindearAlSocket.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/server_bindearAlSocket.c.o
+.PHONY : server_bindearAlSocket.c.o
+
+server_bindearAlSocket.i: server_bindearAlSocket.c.i
+
+.PHONY : server_bindearAlSocket.i
+
+# target to preprocess a source file
+server_bindearAlSocket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/server_bindearAlSocket.c.i
+.PHONY : server_bindearAlSocket.c.i
+
+server_bindearAlSocket.s: server_bindearAlSocket.c.s
+
+.PHONY : server_bindearAlSocket.s
+
+# target to generate assembly for a file
+server_bindearAlSocket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/server_bindearAlSocket.c.s
+.PHONY : server_bindearAlSocket.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,15 +314,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TP_1"
-	@echo "... decodificacion_cesar.o"
-	@echo "... decodificacion_cesar.i"
-	@echo "... decodificacion_cesar.s"
-	@echo "... decodificacion_rc4.o"
-	@echo "... decodificacion_rc4.i"
-	@echo "... decodificacion_rc4.s"
+	@echo "... aux_cipher.o"
+	@echo "... aux_cipher.i"
+	@echo "... aux_cipher.s"
+	@echo "... cipher.o"
+	@echo "... cipher.i"
+	@echo "... cipher.s"
+	@echo "... client_conectarAlSocket.o"
+	@echo "... client_conectarAlSocket.i"
+	@echo "... client_conectarAlSocket.s"
+	@echo "... decodificacion.o"
+	@echo "... decodificacion.i"
+	@echo "... decodificacion.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server_bindearAlSocket.o"
+	@echo "... server_bindearAlSocket.i"
+	@echo "... server_bindearAlSocket.s"
 .PHONY : help
 
 
