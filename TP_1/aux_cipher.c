@@ -38,10 +38,14 @@ int decodificar_cadena(char* input_string, char** argv) {
     cipherInit(&cipher,method_name);
     size_t input_len = strlen(input_string);
     unsigned char buffer[64] = {0};
+    puts("Cadena cifrada:");
     cipherCode(&cipher, (unsigned char*) input_string, input_len, key_string,buffer);
     imprimir_cadena(buffer,strlen(input_string));
+    puts("\nCadena descifrada:");
+    unsigned char buffer_decode[64] = {0};
+    cipherDecode(&cipher, buffer, input_len, key_string,buffer_decode);
+    imprimir_cadena(buffer_decode,strlen(input_string));
     return ret;
-
 }
 
 char* obtener_argumento(char* argumento_original) {

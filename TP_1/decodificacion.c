@@ -26,12 +26,13 @@ int cesar_encoding(unsigned char* input, size_t len, char* key_string,
 int vigenere_encoding(unsigned char* input, size_t len, char* key_string,
                                  unsigned char* buffer, size_t op_type) {
     size_t key_length = strlen(key_string);
+    unsigned char* key = key_string;
     for (size_t i = 0; i < len; ++i) {
         int pos_clave = i%key_length;
         if (op_type == CODE_OP)
-            buffer[i] = (input[i] + key_string[pos_clave])%256;
+            buffer[i] = (input[i] + key[pos_clave])%256;
         else
-            buffer[i] = (input[i] - key_string[pos_clave])%256;
+            buffer[i] = (input[i] - key[pos_clave])%256;
     }
     return 0;
 }
@@ -53,8 +54,12 @@ void rc4_init(unsigned char* arreglo_random, unsigned char* key, unsigned int ke
     }
 }
 
-unsigned char rc4_output(unsigned char* arreglo_random) {
+unsigned char rc4_output(unsigned char* arreglo_random,size_t pos_actual) {
     static unsigned int pos_1,pos_2 = 0;
+    if (pos_actual == 0) { // esto es medio feo, pero si codifico y decodifico
+        pos_1 = 0;         // el mismo proceso, necesito reiniciar ambos al
+        pos_2 = 0;         // inicio de la codificacion
+    }
     pos_1 = (pos_1+1) & 255;
     pos_2 = (pos_2+ arreglo_random[pos_1]) & 255;
     swap(arreglo_random,pos_1,pos_2);
@@ -71,7 +76,7 @@ int rc4_encoding(unsigned char* input, size_t len, char* key_string,
     rc4_init(arreglo_random,copia_clave,key_length);
 
     for (size_t i = 0; i < len; ++i) {
-        buffer[i] = (unsigned char) input[i] ^ rc4_output(arreglo_random);
+        buffer[i] = (unsigned char) input[i] ^ rc4_output(arreglo_random,i);
     }
     free(arreglo_random);
     free(copia_clave);
