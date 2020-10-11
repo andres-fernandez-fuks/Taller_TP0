@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "decodificacion.h"
+#include "common_decoding.h"
 
 #define TOTAL_CARACTERES 256
 #define CODE_OP 0
@@ -80,6 +80,6 @@ int rc4_encoding(unsigned char* input, size_t len, char* key_string,
     }
     free(arreglo_random);
     free(copia_clave);
-    return buffer;
+    return 0;
 }
 

@@ -143,59 +143,32 @@ TP_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/build
 .PHONY : TP_1/fast
 
-aux_cipher.o: aux_cipher.c.o
+client_aux.o: client_aux.c.o
 
-.PHONY : aux_cipher.o
-
-# target to build an object file
-aux_cipher.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/aux_cipher.c.o
-.PHONY : aux_cipher.c.o
-
-aux_cipher.i: aux_cipher.c.i
-
-.PHONY : aux_cipher.i
-
-# target to preprocess a source file
-aux_cipher.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/aux_cipher.c.i
-.PHONY : aux_cipher.c.i
-
-aux_cipher.s: aux_cipher.c.s
-
-.PHONY : aux_cipher.s
-
-# target to generate assembly for a file
-aux_cipher.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/aux_cipher.c.s
-.PHONY : aux_cipher.c.s
-
-cipher.o: cipher.c.o
-
-.PHONY : cipher.o
+.PHONY : client_aux.o
 
 # target to build an object file
-cipher.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/cipher.c.o
-.PHONY : cipher.c.o
+client_aux.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_aux.c.o
+.PHONY : client_aux.c.o
 
-cipher.i: cipher.c.i
+client_aux.i: client_aux.c.i
 
-.PHONY : cipher.i
+.PHONY : client_aux.i
 
 # target to preprocess a source file
-cipher.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/cipher.c.i
-.PHONY : cipher.c.i
+client_aux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_aux.c.i
+.PHONY : client_aux.c.i
 
-cipher.s: cipher.c.s
+client_aux.s: client_aux.c.s
 
-.PHONY : cipher.s
+.PHONY : client_aux.s
 
 # target to generate assembly for a file
-cipher.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/cipher.c.s
-.PHONY : cipher.c.s
+client_aux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_aux.c.s
+.PHONY : client_aux.c.s
 
 client_conectarAlSocket.o: client_conectarAlSocket.c.o
 
@@ -224,32 +197,113 @@ client_conectarAlSocket.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_conectarAlSocket.c.s
 .PHONY : client_conectarAlSocket.c.s
 
-decodificacion.o: decodificacion.c.o
+client_main.o: client_main.c.o
 
-.PHONY : decodificacion.o
+.PHONY : client_main.o
 
 # target to build an object file
-decodificacion.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion.c.o
-.PHONY : decodificacion.c.o
+client_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_main.c.o
+.PHONY : client_main.c.o
 
-decodificacion.i: decodificacion.c.i
+client_main.i: client_main.c.i
 
-.PHONY : decodificacion.i
+.PHONY : client_main.i
 
 # target to preprocess a source file
-decodificacion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion.c.i
-.PHONY : decodificacion.c.i
+client_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_main.c.i
+.PHONY : client_main.c.i
 
-decodificacion.s: decodificacion.c.s
+client_main.s: client_main.c.s
 
-.PHONY : decodificacion.s
+.PHONY : client_main.s
 
 # target to generate assembly for a file
-decodificacion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/decodificacion.c.s
-.PHONY : decodificacion.c.s
+client_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/client_main.c.s
+.PHONY : client_main.c.s
+
+common_aux_cipher.o: common_aux_cipher.c.o
+
+.PHONY : common_aux_cipher.o
+
+# target to build an object file
+common_aux_cipher.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_aux_cipher.c.o
+.PHONY : common_aux_cipher.c.o
+
+common_aux_cipher.i: common_aux_cipher.c.i
+
+.PHONY : common_aux_cipher.i
+
+# target to preprocess a source file
+common_aux_cipher.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_aux_cipher.c.i
+.PHONY : common_aux_cipher.c.i
+
+common_aux_cipher.s: common_aux_cipher.c.s
+
+.PHONY : common_aux_cipher.s
+
+# target to generate assembly for a file
+common_aux_cipher.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_aux_cipher.c.s
+.PHONY : common_aux_cipher.c.s
+
+common_cipher.o: common_cipher.c.o
+
+.PHONY : common_cipher.o
+
+# target to build an object file
+common_cipher.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_cipher.c.o
+.PHONY : common_cipher.c.o
+
+common_cipher.i: common_cipher.c.i
+
+.PHONY : common_cipher.i
+
+# target to preprocess a source file
+common_cipher.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_cipher.c.i
+.PHONY : common_cipher.c.i
+
+common_cipher.s: common_cipher.c.s
+
+.PHONY : common_cipher.s
+
+# target to generate assembly for a file
+common_cipher.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_cipher.c.s
+.PHONY : common_cipher.c.s
+
+common_decoding.o: common_decoding.c.o
+
+.PHONY : common_decoding.o
+
+# target to build an object file
+common_decoding.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_decoding.c.o
+.PHONY : common_decoding.c.o
+
+common_decoding.i: common_decoding.c.i
+
+.PHONY : common_decoding.i
+
+# target to preprocess a source file
+common_decoding.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_decoding.c.i
+.PHONY : common_decoding.c.i
+
+common_decoding.s: common_decoding.c.s
+
+.PHONY : common_decoding.s
+
+# target to generate assembly for a file
+common_decoding.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/common_decoding.c.s
+.PHONY : common_decoding.c.s
 
 main.o: main.c.o
 
@@ -305,6 +359,33 @@ server_bindearAlSocket.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/server_bindearAlSocket.c.s
 .PHONY : server_bindearAlSocket.c.s
 
+server_main.o: server_main.c.o
+
+.PHONY : server_main.o
+
+# target to build an object file
+server_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/server_main.c.o
+.PHONY : server_main.c.o
+
+server_main.i: server_main.c.i
+
+.PHONY : server_main.i
+
+# target to preprocess a source file
+server_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/server_main.c.i
+.PHONY : server_main.c.i
+
+server_main.s: server_main.c.s
+
+.PHONY : server_main.s
+
+# target to generate assembly for a file
+server_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP_1.dir/build.make CMakeFiles/TP_1.dir/server_main.c.s
+.PHONY : server_main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -314,24 +395,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TP_1"
-	@echo "... aux_cipher.o"
-	@echo "... aux_cipher.i"
-	@echo "... aux_cipher.s"
-	@echo "... cipher.o"
-	@echo "... cipher.i"
-	@echo "... cipher.s"
+	@echo "... client_aux.o"
+	@echo "... client_aux.i"
+	@echo "... client_aux.s"
 	@echo "... client_conectarAlSocket.o"
 	@echo "... client_conectarAlSocket.i"
 	@echo "... client_conectarAlSocket.s"
-	@echo "... decodificacion.o"
-	@echo "... decodificacion.i"
-	@echo "... decodificacion.s"
+	@echo "... client_main.o"
+	@echo "... client_main.i"
+	@echo "... client_main.s"
+	@echo "... common_aux_cipher.o"
+	@echo "... common_aux_cipher.i"
+	@echo "... common_aux_cipher.s"
+	@echo "... common_cipher.o"
+	@echo "... common_cipher.i"
+	@echo "... common_cipher.s"
+	@echo "... common_decoding.o"
+	@echo "... common_decoding.i"
+	@echo "... common_decoding.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... server_bindearAlSocket.o"
 	@echo "... server_bindearAlSocket.i"
 	@echo "... server_bindearAlSocket.s"
+	@echo "... server_main.o"
+	@echo "... server_main.i"
+	@echo "... server_main.s"
 .PHONY : help
 
 

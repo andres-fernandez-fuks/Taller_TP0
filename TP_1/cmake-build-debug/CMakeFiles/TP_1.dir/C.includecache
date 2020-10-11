@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/andres/CLionProjects/Taller/TP_1/decodificacion.c
+/home/andres/CLionProjects/Taller/TP_1/client_aux.h
+
+/home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.c
+stdlib.h
+-
+netdb.h
+-
+sys/socket.h
+-
+string.h
+-
+unistd.h
+-
+stdio.h
+-
+errno.h
+-
+common_aux_cipher.h
+/home/andres/CLionProjects/Taller/TP_1/common_aux_cipher.h
+
+/home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.h
+
+/home/andres/CLionProjects/Taller/TP_1/client_main.c
+limits.h
+-
 stddef.h
 -
 string.h
@@ -15,8 +39,18 @@ stdio.h
 -
 stdlib.h
 -
-decodificacion.h
-/home/andres/CLionProjects/Taller/TP_1/decodificacion.h
+client_conectarAlSocket.h
+/home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.h
+client_aux.h
+/home/andres/CLionProjects/Taller/TP_1/client_aux.h
+common_aux_cipher.h
+/home/andres/CLionProjects/Taller/TP_1/common_aux_cipher.h
+client_main.h
+/home/andres/CLionProjects/Taller/TP_1/client_main.h
 
-/home/andres/CLionProjects/Taller/TP_1/decodificacion.h
+/home/andres/CLionProjects/Taller/TP_1/client_main.h
+
+/home/andres/CLionProjects/Taller/TP_1/common_aux_cipher.h
+stdbool.h
+-
 

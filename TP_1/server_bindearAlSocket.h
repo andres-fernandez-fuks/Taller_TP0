@@ -5,6 +5,8 @@
 #ifndef TP_1_SERVER_BINDEARALSOCKET_H
 #define TP_1_SERVER_BINDEARALSOCKET_H
 
-int bindearAlSocket(char* port_name);
+#include <stddef.h>
+
+int bindearAlSocket(char* port_name, unsigned char*, size_t* bytes_recv);
 
 #endif //TP_1_SERVER_BINDEARALSOCKET_H

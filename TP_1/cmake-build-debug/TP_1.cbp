@@ -78,16 +78,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/aux_cipher.c">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_aux.c">
 			<Option target="TP_1"/>
 		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/aux_cipher.h">
-			<Option target="TP_1"/>
-		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/cipher.c">
-			<Option target="TP_1"/>
-		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/cipher.h">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_aux.h">
 			<Option target="TP_1"/>
 		</Unit>
 		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.c">
@@ -96,10 +90,28 @@
 		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_conectarAlSocket.h">
 			<Option target="TP_1"/>
 		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion.c">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_main.c">
 			<Option target="TP_1"/>
 		</Unit>
-		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/decodificacion.h">
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/client_main.h">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/common_aux_cipher.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/common_aux_cipher.h">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/common_cipher.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/common_cipher.h">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/common_decoding.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/common_decoding.h">
 			<Option target="TP_1"/>
 		</Unit>
 		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/main.c">
@@ -109,6 +121,12 @@
 			<Option target="TP_1"/>
 		</Unit>
 		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/server_bindearAlSocket.h">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/server_main.c">
+			<Option target="TP_1"/>
+		</Unit>
+		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/server_main.h">
 			<Option target="TP_1"/>
 		</Unit>
 		<Unit filename="/home/andres/CLionProjects/Taller/TP_1/CMakeLists.txt">

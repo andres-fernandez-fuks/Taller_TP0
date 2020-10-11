@@ -5,6 +5,6 @@
 #ifndef TP_1_CLIENT_CONECTARALSOCKET_H
 #define TP_1_CLIENT_CONECTARALSOCKET_H
 
-int conectarAlSocket(unsigned char* mensaje, char* host_name, char* port_string);
+int connectToSocket(unsigned char* mensaje, size_t len, char* host_name, char* port_name);
 
 #endif //TP_1_CLIENT_CONECTARALSOCKET_H

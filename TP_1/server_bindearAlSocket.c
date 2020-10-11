@@ -8,14 +8,14 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <limits.h>
 
 void inicializar_hints_server(struct addrinfo* hints);
 
-int bindearAlSocket(char* port_name) {
+int bindearAlSocket(char* port_name, unsigned char* buffer, size_t* bytes_recv) {
     struct addrinfo hints;
     struct addrinfo *results, *address;
-    int socket_fd, s,acceptance_socket,valread;
-    char buffer[1024] = {0};
+    int socket_fd, s,peer_socket,valread;
     inicializar_hints_server(&hints);
     char *hello = "Hello from server";
 
@@ -32,7 +32,7 @@ int bindearAlSocket(char* port_name) {
             continue;
 
         if (bind(socket_fd, address->ai_addr, address->ai_addrlen) == 0)
-            printf("Bindeado!\n");
+            puts("Socket bindeado!");
             break;
 
         close(socket_fd);
@@ -48,18 +48,19 @@ int bindearAlSocket(char* port_name) {
         exit(EXIT_FAILURE);
     }
 
-    if ((acceptance_socket = accept(socket_fd, (struct sockaddr *)&address->ai_addr,
+    if ((peer_socket = accept(socket_fd, (struct sockaddr *)&address->ai_addr,
             (socklen_t*)&address->ai_addrlen)) <0)
     {
         perror("accept");
         exit(EXIT_FAILURE);
     }
-    valread = read( acceptance_socket , buffer, 1024);
-    printf("%s\n",buffer );
-    send(acceptance_socket , hello , strlen(hello) , 0 );
+
+    puts("Recibiendo mensaje...");
+    *bytes_recv = recv(peer_socket, buffer, PATH_MAX, 0);
+    freeaddrinfo(results);
     return 0;
 
-    freeaddrinfo(results);           /* No longer needed */
+
 
 }
 

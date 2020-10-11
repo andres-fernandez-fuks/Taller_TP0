@@ -4,8 +4,8 @@
 
 #include <stddef.h>
 #include <string.h>
-#include "cipher.h"
-#include "decodificacion.h"
+#include "common_cipher.h"
+#include "common_decoding.h"
 
 #define CODE_OP 0
 #define DECODE_OP 1
